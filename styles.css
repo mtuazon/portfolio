@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -53,6 +54,25 @@
     color: #000;
 }
 
+
+/* Style the hamburger menu */
+.navBody a.icon {
+    display: flex;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .navBody a:hover {
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
 /* main */
 
 .home {
@@ -61,6 +81,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding-left: 5%;
     padding-right: 5%;
     margin-bottom: 12vh;
@@ -68,8 +89,8 @@
 
 
 .home img{
-    height: 250px;
-    width: 250px;
+    height: 16rem;
+    width: 16rem;
     border-radius: 500rem;
     object-fit:scale-down;
     background-color: #131313;
@@ -94,9 +115,21 @@
     color: #414141;
     padding-left: 20px;
     margin-top: 10px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight:lighter;
 
+}
+
+.CVbutton {
+    margin-top: 2rem;
+    background-color: #7C81AD;
+    color: #F9F5F6;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -104,7 +137,6 @@
 
 .about {
     background-color: #F9F5F6;
-    height: 65vh;
     display: flex;
     flex-direction: column;
 
@@ -121,5 +153,321 @@
 }
 
 .about p{
-    width: 70vw;
+    width: 60vw;
+}
+
+
+/* experience */
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.experience h1{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.experienceBody{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.experienceBody div{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    background-color: #F9F5F6;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 40vh;
+    width: 25rem;
+}
+
+.experience ul{
+    list-style: none;
+    align-self: center;
+}
+
+.experience li{
+    margin-bottom: 3rem;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.experience li img{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+
+
+/* Projects */
+.projects {
+
+    background-color: #F9F5F6;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.projects h1{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.projectWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 15rem;
+    width: 15rem;
+    margin: 1rem;
+}
+
+
+.projectCard img{
+    height: 11rem;
+    width: 11rem;
+}
+
+.projectCard p{
+    font-size: 20px;
+    margin-top: 1rem;
+    color: #000;
+}
+
+/* Contact */
+
+.contact {
+    height: 65vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+.contact h1{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+
+
+}
+
+.contact li{
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 830px) {
+    
+   .navLinks{
+       display: none;
+   }
+
+   /* home */
+
+   .home{
+       flex-direction: column;
+      
+   }
+
+   .home img{
+       height: 9rem;
+       width: 9rem;
+   }
+
+   .homeText{
+       margin-left: 1rem;
+       margin-top: 1.5rem;
+    
+   }
+
+   .homeText h1{
+       font-size: 2rem;
+   }
+
+   .homeText p{
+       font-size: 1.1rem;
+   }
+
+   .CVbutton {
+    width: 8rem;
+    font-size: 1rem;
+    align-self: center;
+   }
+
+   /* about */
+
+   
+
+   .about h1{
+       font-size: 2rem;
+       align-self: center;
+   }
+
+   .about p{
+       width: 90vw;
+       text-align: justify;
+       font-size: medium;
+       
+   }
+
+
+   /* experience */
+
+   .experience h1{
+       font-size: 2rem;
+       align-self: center;
+   }
+
+   .experienceBody div{
+    margin-bottom: 2rem;
+   }
+
+   /* Projects */
+
+   .projects h1{
+       font-size: 2rem;
+       align-self: center;
+   }
+
+   .projectWrap {
+       flex-direction: column;
+       align-self: center;
+   }
+
+   .projectCard{
+    height: 10rem;
+    width: 10rem;
+
+   }
+
+   /* Contact */
+
+   .contact h1{
+       font-size: 2rem;
+       align-self: center;
+   }
+
+   .openbtn{
+        visibility: visible;
+    }
+   
+
+}
+
+
+
+
+/* burger */
+
+
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }

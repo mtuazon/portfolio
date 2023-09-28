@@ -6,58 +6,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 
-    <!-- Navbar -->
-    
+   
     <nav class="navbar">
         <div class = "navLogo">
             <h1>mtuazon</h1>
         </div>
         <div class = "navBody">
             <ul class = navLinks>
-                <a href="index.html">
+                <a href="#home">
                     <li>Home</li>
                 </a>
-                <a href="about.html">
+                <a href="#about">
                     <li>About</li>
                 </a>
-                <a href="contact.html">
+                <a href="#experience">
+                    <li>Experience</li>
+                </a>
+                <a href="#projects">
                     <li>Projects</li>
                 </a>
-                <a href="services.html">
-                    <li>Resume</li>
+                <a href="#contact">
+                    <li>Contact</li>
                 </a>
+
             </ul>
+
         </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+
        
     </nav>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
 
+      </div>
 
     <!-- Main -->
 
-    <div class = "home">
-        <img src="assets/images/myPic.png" alt="mtuazon">
-        <div class = "homeText">
-            <h1>Marivic Tuazon</h1>
+    <div class = "home" id="home">
+        <img src="assets/images/myPic.png" alt="mtuazon"  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">
+        <div class = "homeText"  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">
+            <h1 >Marivic Tuazon</h1>
 
-            <p>Full Stack CODM player</p>
+            <p> I'm a
+                <span class="typer" id="first-typer" data-owner="first-typer" data-delay= "100" data-words="Web Developer,CODM player,Valorant player"></span>
+            </p>
+            <a class = 'CVbutton' href="https://www.dropbox.com/scl/fi/466vx0yo74xvmtugoj2yu/cv_tuazon.pdf?rlkey=m67n6vnsj50ufdbvvtqcnduo0&dl=0">View CV Resume</a>
+
         </div>
     </div> 
-    <div class = "about">
-        <h1>About Me</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class = "about" id="about">
+        <h1  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">About Me</h1>
+        <p  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">I'm a passionate learner and a third-year student at TUP Manila, specializing in Information Systems. Join me on my journey as I explore the fascinating world of technology and share my insights.</p>
+        <br>
+        <p  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">When I'm not immersed in the digital realm, you'll find me indulging in a few of my favorite hobbies and interests. One of my all-time favorite fictional heroes is Spider-Man. Just like Peter Parker, I strive to make the most of my abilities and contribute positively to society. Additionally, I have a soft spot for crochet. Whether it's making cozy blankets for loved ones or crafting intricate accessories, crochet allows me to express my artistic side and create something special from scratch.</p>
+        <br>
+        <p  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">On a completely different note, I'm an avid motorcycle rider. The freedom of the open road and the thrill of the wind rushing by as I navigate the twists and turns is an experience like no other. Riding motorcycles has not only given me a sense of adventure but also taught me valuable lessons about control, responsibility, and embracing life's unexpected curves.</p>
+        <br>
+        <p  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">Lastly, I'm proud to be a member of the LGBTQ+ community. Being part of this vibrant and diverse community has enriched my life in countless ways. I'm passionate about promoting inclusivity, equality, and acceptance for all, regardless of their sexual orientation or gender identity. Join me in exploring and celebrating the wonderful tapestry of experiences that make me who I am."</p>
 
 
     </div> 
-    <div class = "projects">
-        <p>test</p>
+    <div class = "experience" id="experience">
+        <h1  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">Experience</h1>
+        <div class = "experienceBody"  data-aos="fade-in" data-aos-mirror="true">
+            <div >
+                <ul>
+                    <li  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">
+                        <img src="assets/images/html.png" alt="">
+                        HTML
+                    </li>
+                    <li  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">
+                        <img src="assets/images/css.png" alt="">
+
+                        CSS
+                    </li>
+                    <li  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">
+                        <img src="assets/images/js.png" alt="">
+
+                        JavaScript
+                    </li>
+                </ul>
+            
+
+            </div>
+            <div >
+                <ul>
+                    <li  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">
+                        <img src="assets/images/C.png" alt="">
+                        C Language
+                    </li>
+                    <li  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">
+                        <img src="assets/images/c++.png" alt="">
+                        C++ Language
+
+                    </li>
+                    <li  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">
+                        <img src="assets/images/python.png" alt="">
+
+                        Python Language
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div> 
-    <div class = "resume">
-        <p>test</p>
+    <div class = "projects" id="projects">
+        <h1>Projects</h1>
+        <div class="projectWrap">
+            <a  data-aos="fade-in" data-aos-mirror="true"  data-aos-once="false" href="https://drive.google.com/file/d/1Ps-m6CdR_bVQI0WaD1bYDFrUrBRwDSpc/view">
+                <div class = "projectCard">
+                    <img src="assets/images/inbetween.png" alt="">
+                    <p>In Between</p>
+                </div>
+            </a>
+            <a  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true" href="https://drive.google.com/file/d/1hzMpNScf7xDCoogTK5NdK-0F7u2Op4mt/view">
+                <div class = "projectCard">
+                    <img src="assets/images/HWBAM.png" alt="">
+                    <p>HWBAM</p>
+                </div>
+
+            </a>
+            <a  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true" href="https://drive.google.com/file/d/1WuJcrw4bNGk5d_LRLdKCyqGD1DosLJZ1/view">
+                <div class = "projectCard">
+                    <img src="assets/images/C.png" alt="">
+                    <p>ATM</p>
+                </div>
+            </a>
+            <a  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true" href="https://drive.google.com/file/d/1PAvzxqwstkkORbZqCiGJ4wUwm99SC-CK/view">
+                <div class = "projectCard">
+                    <img src="assets/images/python.png" alt="">
+                    <p>GUI Cipher</p>
+                </div>
+            </a>
+            <a  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true" href="https://drive.google.com/file/d/1l1-4FXEhgtQFLULh5XcE_CSg24v5GKns/view">
+                <div class = "projectCard">
+                    <img src="assets/images/python.png" alt="">
+                    <p>Stack</p>
+                </div>
+            </a>
+            <a  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true" href="https://drive.google.com/file/d/1KQbFVNQFAYLMtTsF0VlCPeomHyh2OoJQ/view">
+                <div class = "projectCard">
+                    <img src="assets/images/library.png" alt="">
+                    <p>Library system</p>
+                </div>
+            </a>
+            <a   data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true" href="https://drive.google.com/drive/folders/1oPJUJdeNKyqV3W1MGn50Gf5S9J9Too30">
+                <div class = "projectCard">
+                    <img src="assets/images/python.png" alt="">
+                    <p>Student Record</p>
+                </div>
+            </a>
+            
+            
+            
+          
+        </div>
+    </div> 
+    <div class = "contact" id="contact">
+        <h1  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">Get in touch</h1>
+        <ul>    
+            <li  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">Email: marivic.tuazon@tup.edu.ph</li>
+            <li  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true">Phone: 09758944537</li>
+        </ul>
+        <a  data-aos="fade-in"  data-aos-once="false" data-aos-mirror="true" class = 'CVbutton' href="https://github.com/mtuazon">Visit Github</a>
 
     </div> 
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
